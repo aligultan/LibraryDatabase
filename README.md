@@ -3,7 +3,7 @@
 This is a simple library application implemented in Python. The application allows users to manage a library by adding books, removing books, searching for books, and displaying the list of available books.
 The application utilizes SQLite as the database backend and supports data export in JSON and CSV formats.
 
-![Library Application Screenshot](images/ss.png)
+<img alt="Library Application Screenshot" height="400" src="images/ss.png" width="800"/>
 
 ## Features
 
