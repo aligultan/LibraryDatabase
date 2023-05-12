@@ -1,0 +1,242 @@
+[
+    {
+        "author": "Yuval Noah Harari",
+        "genre": "Nonfiction",
+        "name": "Sapiens",
+        "number_of_pages": 464,
+        "publisher": "Harper",
+        "year": 2011
+    },
+    {
+        "author": "George R.R.Martin",
+        "genre": "Epic Fantasy",
+        "name": "Game of Thrones",
+        "number_of_pages": 694,
+        "publisher": "Harper Collins",
+        "year": 1996
+    },
+    {
+        "author": "Malcolm Gladwell",
+        "genre": "Nonfiction",
+        "name": "Outliers",
+        "number_of_pages": 324,
+        "publisher": "Little,Brown and Company",
+        "year": 2008
+    },
+    {
+        "author": "James Clear",
+        "genre": "Nonfiction",
+        "name": "Atomic Habits",
+        "number_of_pages": 320,
+        "publisher": "Avery",
+        "year": 2018
+    },
+    {
+        "author": "Price Pritchett",
+        "genre": "Self-Help",
+        "name": "You2",
+        "number_of_pages": 35,
+        "publisher": "Pritchett LP",
+        "year": 1994
+    },
+    {
+        "author": "Richard K. Morgan",
+        "genre": "Science-Fiction",
+        "name": "Altered Carbon",
+        "number_of_pages": 416,
+        "publisher": "Victor Gollancz Ltd",
+        "year": 2002
+    },
+    {
+        "author": "Anthony Burgess",
+        "genre": "Dystopia",
+        "name": "A Clockwork Orange",
+        "number_of_pages": 240,
+        "publisher": "W.W.Norton & Company",
+        "year": 1962
+    },
+    {
+        "author": "George R.R.Martin",
+        "genre": "Epic Fantasy",
+        "name": "A Clash of Kings",
+        "number_of_pages": 761,
+        "publisher": "Harper Collins",
+        "year": 1998
+    },
+    {
+        "author": "Harper Lee",
+        "genre": "Fiction,Classic",
+        "name": "To Kill a Mockingbird",
+        "number_of_pages": 324,
+        "publisher": "Harper Perennial Modern Classics",
+        "year": 1960
+    },
+    {
+        "author": "George Orwell",
+        "genre": "Dystopia",
+        "name": "1984",
+        "number_of_pages": 328,
+        "publisher": "Signet Classics",
+        "year": 1949
+    },
+    {
+        "author": "Jane Austen",
+        "genre": "Fiction,Romance",
+        "name": "Pride and Prejudice",
+        "number_of_pages": 432,
+        "publisher": "Penguin Classics",
+        "year": 1813
+    },
+    {
+        "author": "J.D. Salinger",
+        "genre": "Fiction,Coming-of-Age",
+        "name": "The Catcher in the Rye",
+        "number_of_pages": 224,
+        "publisher": "Little,Brown and Company",
+        "year": 1951
+    },
+    {
+        "author": "J.R.R.Tolkien",
+        "genre": "Fiction,Fantasy",
+        "name": "The Hobbit",
+        "number_of_pages": 320,
+        "publisher": "Mariner Books",
+        "year": 1937
+    },
+    {
+        "author": "Aldous Huxley",
+        "genre": "Dystopia",
+        "name": "Brave New World",
+        "number_of_pages": 288,
+        "publisher": "Harper Perennial Modern Classics",
+        "year": 1932
+    },
+    {
+        "author": "Paulo Coelho",
+        "genre": "Fiction,Inspirational",
+        "name": "The Alchemist",
+        "number_of_pages": 208,
+        "publisher": "HarperOne",
+        "year": 1988
+    },
+    {
+        "author": "J.R.R.Tolkien",
+        "genre": "Fiction, Fantasy",
+        "name": "The Lord of The Rings",
+        "number_of_pages": 1178,
+        "publisher": "Mariner Books",
+        "year": 1954
+    },
+    {
+        "author": "Dan Brown",
+        "genre": "Fiction,Thriller",
+        "name": "The Da Vinci Code",
+        "number_of_pages": 597,
+        "publisher": "Anchor",
+        "year": 2003
+    },
+    {
+        "author": "Gillian Flynn",
+        "genre": "Fiction,Thriller",
+        "name": "Gone Girl",
+        "number_of_pages": 419,
+        "publisher": "Broadway Books",
+        "year": 2012
+    },
+    {
+        "author": "Miguel de Cervantes",
+        "genre": "Novel",
+        "name": "Don Quixote",
+        "number_of_pages": 992,
+        "publisher": "Various",
+        "year": 1605
+    },
+    {
+        "author": "Homer",
+        "genre": "Epic Poetry",
+        "name": "The Odyssey",
+        "number_of_pages": 541,
+        "publisher": "Various",
+        "year": 1604
+    },
+    {
+        "author": "Suzanne Collins",
+        "genre": "Dystopia",
+        "name": "The Hunger Games",
+        "number_of_pages": 374,
+        "publisher": "Scholastic Press",
+        "year": 2008
+    },
+    {
+        "author": "Kathryn Stockett",
+        "genre": "Fiction,Historical,Drama",
+        "name": "The Help",
+        "number_of_pages": 464,
+        "publisher": "Penguin Books",
+        "year": 2009
+    },
+    {
+        "author": "Stieg Larsson",
+        "genre": "Fiction,Mystery,Thriller",
+        "name": "The Girl with the Dragon Tattoo",
+        "number_of_pages": 465,
+        "publisher": "Norstedts Förlag",
+        "year": 2005
+    },
+    {
+        "author": "John Green",
+        "genre": "Fiction,Young Adult,Romance",
+        "name": "The Fault in Our Stars",
+        "number_of_pages": 313,
+        "publisher": "Dutton Books",
+        "year": 2012
+    },
+    {
+        "author": "Paula Hawkins",
+        "genre": "Fiction, Thriller, Mystery",
+        "name": "The Girl on the Train",
+        "number_of_pages": 325,
+        "publisher": "Riverhead Books",
+        "year": 2015
+    },
+    {
+        "author": "Leo Tolstoy",
+        "genre": "Novel",
+        "name": "War and Peace",
+        "number_of_pages": 1225,
+        "publisher": "The Russian Messenger",
+        "year": 1867
+    },
+    {
+        "author": "Fyodor Dostoevsky",
+        "genre": "Literary fiction",
+        "name": "Crime and Punishment",
+        "number_of_pages": 576,
+        "publisher": "The Russian Messenger",
+        "year": 1866
+    },
+    {
+        "author": "F.Scott Fitzgerald",
+        "genre": "Fiction,Classic",
+        "name": "The Great Gatsby",
+        "number_of_pages": 180,
+        "publisher": "Charles Scribner's Sons",
+        "year": 1925
+    },
+    {
+        "author": "Markus Zusak",
+        "genre": "Fiction,Historical",
+        "name": "The Book Thief",
+        "number_of_pages": 552,
+        "publisher": "Picador",
+        "year": 2005
+    },
+    {
+        "author": "Douglas Adams",
+        "genre": "Science Fiction",
+        "name": "The Hitchhiker's Guide to the Galaxy",
+        "number_of_pages": 193,
+        "publisher": "Pan Books",
+        "year": 1979
+    }
+]
