@@ -1,7 +1,5 @@
 import sqlite3
 
-import time
-
 class Book():
 
     def __init__(self,name,author,publisher,number_of_pages,year,genre):
@@ -13,32 +11,52 @@ class Book():
         self.genre = genre
 
     def __str__(self):
-        return "Book Name: {}\nAuthor: {}\nPublisher: {}\nNumber of Pages: {}\nYear: {}\nGenre: {}".format(self.name,self.author,self.publisher,self.number_of_pages,self.year,self.genre)
+        bookDetails = f"""
+        Book Name: {self.name}
+        Author: {self.author}
+        Publisher: {self.publisher}
+        Number of Pages: {self.number_of_pages}
+        Year: {self.year}
+        Genre: {self.genre}
+        """
+        return bookDetails.rstrip()
 
+# Querries for library database
+libraryCreateQuery = "CREATE TABLE IF NOT EXISTS Books (Name TEXT,Author TEXT,Publisher TEXT,Number of Pages INT,Year INT,Genre TEXT)"
 
+selectAllBooksQuery = "SELECT * FROM Books"
+
+selectSpecificBookQuery = "SELECT * FROM Books WHERE Name = ?"
+
+insertBookQuery = "INSERT INTO Books VALUES (?,?,?,?,?,?)"
+
+deleteBookQuery = "DELETE FROM Books WHERE Name = ?"
 
 class Library():
 
     def __init__(self):
         self.create_connection()
 
+
     def create_connection(self):
         self.connection=sqlite3.connect("Library.db")
 
         self.cursor = self.connection.cursor()
 
-        query = "Create table if not exists Books (Name TEXT,Author TEXT,Publisher TEXT,Number of Pages INT,Year INT,Genre TEXT)"
+        query = libraryCreateQuery
 
         self.cursor.execute(query)
 
         self.connection.commit()
 
+
     def close_connection(self):
         self.connection.close()
 
+
     def show_books(self):
 
-        query = "Select * from Books"
+        query = selectAllBooksQuery
 
         self.cursor.execute(query)
 
@@ -48,37 +66,44 @@ class Library():
             print("No books in the library.")
 
         else:
-            for i in books:
-                book = Book(i[0],i[1],i[2],i[3],i[4],i[5])
-                print(book)
-                print("\n")
+            for details in books:
+                book = Book(name= details[0],author= details[1],
+                            publisher= details[2],number_of_pages= details[3],
+                            year= details[4],genre= details[5])
+                print(str(book)+"\n")
+
 
     def search_book(self,name):
 
-        query = "Select * from Books where name = ?"
+        query = selectSpecificBookQuery
 
-        self.cursor.execute(query,(name,))
+        
+        details  = self.cursor.execute(query,(name,)).fetchone() # fetchone() returns a tuple
 
-        books  = self.cursor.fetchall()
-
-        if(len(books)==0):
-            print("No such book found...")
+        if details is None:
+            print("No such book in the library.")
 
         else:
-            book = Book(books[0][0],books[0][1],books[0][2],books[0][3],books[0][4],books[0][5])
+            
+            book = Book(name= details[0],author= details[1],
+                        publisher= details[2],number_of_pages= details[3],
+                        year= details[4],genre= details[5])
 
-            print(book)
+            print(str(book)+"\n")
+
+
     def add_book(self,book):
 
-        query = "insert into Books values(?,?,?,?,?,?)"
+        query = insertBookQuery
 
         self.cursor.execute(query,(book.name,book.author,book.publisher,book.number_of_pages,book.year,book.genre))
 
         self.connection.commit()
 
+
     def remove_book(self,name):
 
-        query = "Delete from Books where name = ?"
+        query = deleteBookQuery
 
         self.cursor.execute(query,(name,))
 

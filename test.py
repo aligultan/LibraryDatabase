@@ -2,7 +2,7 @@ import time
 
 from library import *
 
-print("""**************************
+menu_prompt ="""**************************
 
 Welcome to the Library Program!
 
@@ -18,55 +18,67 @@ Operations:
 
 Press 'q' to quit.
 
-**************************""")
+**************************"""
 
 library = Library()
 
 
 while True:
-    operation = input("Enter your operation:")
+    print(menu_prompt)
+    operation = input("Enter your operation: ")
 
     if (operation == "q"):
         print("Exiting the program...")
         library.close_connection()
         break
 
-        break
+
     elif (operation == "1"):
         print("\n")
         library.show_books()
-
+        input("Press any key to continue..")
 
 
     elif (operation == "2"):
-        name = input("Which book are you looking for ?:")
+        name = input("Which book are you looking for ?: ")
         print("Searching for the book..")
-        time.sleep(2)
+        time.sleep(1.5)
 
         library.search_book(name)
+        input("Press any key to continue..")
+
 
     elif (operation == "3"):
-        name = input("Name:")
-        author = input("Author:")
-        publisher = input("Publisher:")
-        number_of_pages = int(input("Number of Pages:"))
-        year = int(input("Year:"))
-        genre = input("Genre:")
+        name = input("Name: ")
+        author = input("Author: ")
+        publisher = input("Publisher: ")
+
+        # to prevent ValueError
+        while True:
+            try:
+                number_of_pages = int(input("Number of Pages: "))
+                year = int(input("Year: "))
+            except ValueError:
+                print("Invalid input. Please try again.")
+                continue
+            else:
+                break
+
+        genre = input("Genre: ")
 
         new_book = Book(name,author,publisher,number_of_pages,year,genre)
 
         print("Adding the book..")
-        time.sleep(2)
+        time.sleep(1.5)
 
         library.add_book(new_book)
         print("Book added.")
 
 
-
     elif (operation == "4"):
-        name = input("Which book do you want to remove ?:")
-        answer = input("Are you sure ? (Y/N):")
-
+        name = input("Which book do you want to remove ?: ")
+        
+        answer = input("Are you sure ? (Y/N): ")
         if(answer=="Y"):
             print("Removing the book...")
             time.sleep(2)
@@ -75,4 +87,5 @@ while True:
 
 
     else:
-        print("Invalid Operation!")
+        print("Invalid Operation!\n")
+    
