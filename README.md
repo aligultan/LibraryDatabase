@@ -23,7 +23,7 @@ The application utilizes SQLite as the database backend and supports data export
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-username/library-application.git
+   git clone https://github.com/aligultan/library-application.git
 2. Change into the project directory:
    ```shell
    cd library-application
