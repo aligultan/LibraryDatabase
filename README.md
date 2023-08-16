@@ -23,10 +23,10 @@ The application utilizes SQLite as the database backend and supports data export
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/aligultan/library-application.git
+   git clone https://github.com/aligultan/LibraryDatabase.git
 2. Change into the project directory:
    ```shell
-   cd library-application
+   cd LibraryDatabase
 3. Install the required dependencies:
    ```shell
    pip install -r requirements.txt
